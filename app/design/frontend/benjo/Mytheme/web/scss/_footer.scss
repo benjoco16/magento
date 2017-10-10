@@ -1,0 +1,30 @@
+// ionclude all your related style here in the footer, you can leave it empty if the page has no footer
+footer { 
+	z-index: 2; 
+	position: relative; 
+	background: #36c5d1;
+	padding: 25px 0;
+	text-align: center;
+	color: #fff;
+	width: 100%;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+ul.footer > li {
+	    margin: 0 0 8px 10px !important;
+	    padding:0;
+    display: inline-block;
+    line-height: 37px;
+}
+ul.footer > li > a {
+	color:#fff;
+}
+small.copyright span {
+	width:100%;
+	display:block;
+	text-align:center;
+}
+.action.primary {
+	font-size:12px;
+
+}

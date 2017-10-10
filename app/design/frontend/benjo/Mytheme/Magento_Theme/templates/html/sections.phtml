@@ -1,0 +1,34 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+
+/**
+*  General template for displaying group of blocks devided into sections
+*/
+
+$group = $block->getGroupName();
+$groupCss = $block->getGroupCss();
+$groupBehavior = $block->getGroupBehaviour() ? $block->getGroupBehaviour() : '{"tabs":{"openedState":"active"}}';
+?>
+<?php if ($detailedInfoGroup = $block->getGroupChildNames($group, 'getChildHtml')):?>
+
+
+
+<!--<script src='<?php //echo $block->getViewFileUrl('js/jquery.flexslider.js'); ?>' type="text/javascript"></script>
+<script src='<?php //echo $block->getViewFileUrl('js/lib/jquery.min.js'); ?>' type="text/javascript"></script>
+<script src='<?php //echo $block->getViewFileUrl('js/bootstrap.min.js'); ?>' type="text/javascript"></script>
+<script src='<?php //echo $block->getViewFileUrl('js/custom.js'); ?>' type="text/javascript"></script>
+<script>
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+</script>-->
+
+<?php endif; ?>
